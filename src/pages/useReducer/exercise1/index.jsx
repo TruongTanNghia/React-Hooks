@@ -7,7 +7,6 @@ const LearnUseReducer = () => {
     todo: '',
   });
 
-  //* useReducer
   const [state, dispatch] = useReducer(todoReducer, initState);
 
   const handleChange = (e) => {
@@ -16,6 +15,7 @@ const LearnUseReducer = () => {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleAddTodo = (e) => {
     e.preventDefault();
     dispatch(addTodoAction(form));
@@ -31,12 +31,12 @@ const LearnUseReducer = () => {
       todo: '',
     });
   };
-  console.log(state, 'Oke');
+
   return (
-    <>
-      <form style={{ background: 'none' }} onSubmit={handleAddTodo}>
-        <h1 style={{ fontSize: '15px' }} htmlFor="focus">
-        Please enter value input
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <form style={{ background: 'none', marginBottom: '20px', textAlign: 'center' }} onSubmit={handleAddTodo}>
+        <h1 style={{ fontSize: '15px', marginBottom: '10px' }} htmlFor="focus">
+          Please enter value input
         </h1>
         <input
           id="focus"
@@ -45,19 +45,20 @@ const LearnUseReducer = () => {
           onChange={handleChange}
           value={form.todo}
           placeholder="Please enter value input"
+          style={{width: '300px', height: '30px', marginBottom: '10px'}}
         />
-        <button onClick={handleAddTodo}>Add</button>
+        <button style={{ marginTop: '10px' }} onClick={handleAddTodo}>
+          Add
+        </button>
       </form>
 
-      {state?.todos.map((item) => {
-        return (
-          <ul key={item.id}>
-            <li>{item.text}</li>
-            <button onClick={() => handleDelete(item.id)}>X</button>
-          </ul>
-        );
-      })}
-    </>
+      {state?.todos.map((item) => (
+        <div key={item.id} style={{ marginBottom: '10px' }}>
+          <span style={{ marginRight: '10px',fontSize: '25px' }}>{item.text}</span>
+          <button  onClick={() => handleDelete(item.id)}>X</button>
+        </div>
+      ))}
+    </div>
   );
 };
 

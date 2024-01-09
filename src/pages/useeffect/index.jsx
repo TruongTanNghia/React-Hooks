@@ -19,7 +19,7 @@ const LearnUseEffect = () => {
   }, []); 
 
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h1>User List</h1>
       {isLoading ? (
         <p>Loading...</p>

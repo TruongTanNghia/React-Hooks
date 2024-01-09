@@ -1,11 +1,17 @@
-
-import useAuth from '../../../hooks/useAuth';
+import useAuth from "../../../hooks/useAuth";
 
 const UserInfo = () => {
   const { user, login, logout } = useAuth();
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        textAlign: 'center',
+      }}
+    >
       {user ? (
         <>
           <p>Welcome, {user.username}!</p>
@@ -13,8 +19,8 @@ const UserInfo = () => {
         </>
       ) : (
         <>
-          <p>Please log in</p>
-          <button onClick={() => login('exampleUser')}>Login</button>
+          <p >Please log in</p>
+          <button onClick={() => login("exampleUser")}>Login</button>
         </>
       )}
     </div>
