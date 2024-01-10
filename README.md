@@ -15,9 +15,39 @@
 ![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/5af5fad4-3670-4c85-a43d-ff439cff4baa)
 
 ## useEffect
-### Exercise: 
+### Exercise: Hiển Thị Danh Sách Người Dùng
+#### Hướng Dẫn:
+Khởi tạo State: Sử dụng useState để khởi tạo biến trạng thái users là một mảng rỗng và isLoading là true.
+
+Fetch Dữ Liệu: Sử dụng useEffect để fetch dữ liệu từ https://jsonplaceholder.typicode.com/users khi component được render lần đầu tiên. Khi dữ liệu được fetch thành công, cập nhật trạng thái users và đặt isLoading về false.
+
+Hiển Thị Loading Message: Nếu đang loading (isLoading là true), hiển thị một thông báo "Loading..." trong phần tử <p>.
+
+Hiển Thị Danh Sách Người Dùng: Nếu không đang loading, hiển thị danh sách người dùng trong một phần tử <ul>. Mỗi người dùng được hiển thị trong một phần tử <li> với key là user.id và nội dung là user.name.
+
+Style: Canh giữ phần tử chứa danh sách người dùng theo chiều ngang và chiều dọc.
+#### Hình Ảnh Minh Hoạ
+![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/64421a03-32eb-487a-9cc9-6c3025fc950e)
+
 ## useRef
-### Exercise: 
+### Exercise: Điều Kích Thước Input
+#### Hướng Dẫn:
+Tạo Ref cho Input: Sử dụng useRef để tạo một ref có tên là sizeRef và áp dụng nó cho phần tử input.
+
+Thay Đổi Kích Thước: Implement một hàm handleSize để thay đổi kích thước của input khi nút "UP SIZE" được click. Khi click nút này, đặt chiều rộng (width) và chiều cao (height) của input lên 550px.
+
+Đặt Kích Thước Ban Đầu: Implement một hàm handleClearSize để đặt lại kích thước ban đầu của input khi nút "Clear" được click. Khi click nút này, đặt chiều rộng và chiều cao của input về 240px và 100px.
+
+Styling Input: Cho input một style mặc định với chiều rộng là 240px và chiều cao là 100px.
+
+Nâng Cao (Tùy Chọn): Thử nghiệm thêm tính năng khác, ví dụ: thay đổi màu sắc, font chữ, hoặc các thuộc tính khác của input bằng cách sử dụng useRef.
+#### Hình Ảnh Minh Hoạ
+##### Trước: 
+![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/24ca02fe-0407-4a23-b4ae-07c6cda300cb)
+
+##### Sau:
+![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/9ec87a61-ebb3-4b44-a001-cc5c7bcee4dc)
+
 ## useCallback
 ### Exercise: 
 ## useContext
