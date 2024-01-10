@@ -102,21 +102,36 @@ Tạo Context và Reducer:
 
 Trong store.js:
 - Tạo một TodoContext bằng createContext().
-- Xây dựng một reducer cho todo list. Reducer này sẽ xử lý các action như ADD_TODO và DELETE_TODO.
+- Xây dựng reducer cho todo list. Reducer này sẽ xử lý các action như ADD_TODO và DELETE_TODO.
 Tạo Action Types:
-Trong store.js:
-- Định nghĩa các action types như ADD_TODO và DELETE_TODO.
-Tạo Custom Hook useTodo:
 
-Trong exercise.js:
-- Hiển thị danh sách todo.
-- Mỗi todo có một nút "Delete" để xoá todo tương ứng.
-Chức Năng Thêm Todo:
-Trong exercise.js:
-- Tạo một input và một nút "Add".
-- Khi người dùng nhập dữ liệu và bấm "Add", todo mới sẽ được thêm vào danh sách.
-Chức Năng Xoá Todo:
-Trong exercise.js:
-- Khi người dùng bấm nút "Delete" trên mỗi todo, todo tương ứng sẽ bị xoá khỏi danh sách.
-Style và Trình Bày:
-- Tuỳ chỉnh giao diện và kiểu dáng theo sở thích cá nhân của bạn để đảm bảo giao diện người dùng thân thiện và dễ đọc.
+Trong type.js:
+- Định nghĩa các action types như ADD_TODO và DELETE_TODO.
+Action Creators và Reducer:
+
+Trong action.js:
+
+- Viết hàm addTodoAction để thêm todo mới.
+- Viết hàm deleteTodoAction để xoá todo dựa trên id.
+Trong reducer.js:
+
+- Xây dựng reducer với các action types tương ứng để thực hiện thêm và xoá todo.
+Sử Dụng useReducer và useState:
+
+Trong exercise1/index.js:
+- Import useReducer và useState từ React.
+- Import reducer, initState và action creators.
+- Tạo state local cho input (todo) và danh sách todos (state).
+- Sử dụng useReducer để quản lý state toàn cục với reducer.
+Xử Lý Thêm và Xoá Todo:
+
+Trong exercise1/index.js:
+- Viết hàm handleChange để cập nhật giá trị của input khi người dùng nhập liệu.
+- Viết hàm handleAddTodo để thêm todo mới khi người dùng nhấn nút "Add".
+- Viết hàm handleDelete để xoá todo khi người dùng nhấn nút "X".
+Hiển Thị Danh Sách Todo:
+
+Trong exercise1/index.js:
+- Hiển thị danh sách todo với mỗi todo kèm theo nút "X" để xoá.
+#### Hình Ảnh Minh Hoạ
+![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/bd9bae0a-6dda-4b0e-a318-cfaa9a417832)
