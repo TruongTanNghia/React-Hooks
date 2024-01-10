@@ -1,5 +1,5 @@
-# REACT-HOOKS
-## useState
+# REACT-HOOKS 🔥
+## useState ⭐
 ### Exercise: Component Đếm với useState
 #### Hướng Dẫn:
  - Khởi tạo State: Tạo một biến trạng thái count và khởi tạo nó là 0 sử dụng useState.
@@ -14,7 +14,7 @@
 #### Hình Ảnh Minh Hoạ
 ![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/5af5fad4-3670-4c85-a43d-ff439cff4baa)
 
-## useEffect
+## useEffect ⭐
 ### Exercise: Hiển Thị Danh Sách Người Dùng
 #### Hướng Dẫn:
 - Khởi tạo State: Sử dụng useState để khởi tạo biến trạng thái users là một mảng rỗng và isLoading là true.
@@ -29,7 +29,7 @@
 #### Hình Ảnh Minh Hoạ
 ![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/64421a03-32eb-487a-9cc9-6c3025fc950e)
 
-## useRef
+## useRef ⭐
 ### Exercise: Điều Kích Thước Input
 #### Hướng Dẫn:
 - Tạo Ref cho Input: Sử dụng useRef để tạo một ref có tên là sizeRef và áp dụng nó cho phần tử input.
@@ -48,7 +48,7 @@
 ##### Sau:
 ![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/9ec87a61-ebb3-4b44-a001-cc5c7bcee4dc)
 
-## useCallback
+## useCallback ⭐
 ### Exercise: Bạn có hai files component: Content.js và LearnUseCallback.js. Nhiệm vụ của bạn là tối ưu hóa re-render trong ứng dụng React bằng cách sử dụng React.memo và React.useCallback.
 #### Hướng Dẫn:
 - Sử dụng React.memo để tối ưu hóa component Content trong Content.js.
@@ -60,7 +60,7 @@ Kết Quả Mong Đợi:
 #### Hình Ảnh Minh Hoạ
 ![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/42013c72-d544-4221-bd71-77342c128737)
 
-## useContext
+## useContext ⭐
 ### Exercise: useContext trong React
 #### Hưỡng Dẫn
 Tạo Context và Provider:
@@ -95,7 +95,7 @@ Style và Trình Bày:
 ##### Sau: 
 ![image](https://github.com/TruongTanNghia/React-Hooks/assets/92427686/93188958-2d86-48fa-8faf-38db8bc4e165)
 
-## useReducer
+## useReducer ⭐
 ### Exercise: React useReducer - Todo List
 #### Hướng Dẫn
 Tạo Context và Reducer:
